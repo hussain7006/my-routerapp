@@ -46,11 +46,29 @@ export default function SignUp() {
                             <TextField id="email" label="Email" variant="outlined" fullWidth={true} size='medium' required={true} />
                         </Box>
                         <Box mb={2} sx={{ width: '60%' }}>
+                            <TextField id="address" label="Address" variant="outlined" fullWidth={true} size='medium' required={true} />
+                        </Box>
+                        <Box mb={2} sx={{ width: '60%' }}>
+                            <TextField id="Phone" label="Phone" variant="outlined" fullWidth={true} size='medium' required={true} />
+                        </Box>
+                        <Box mb={2} sx={{ width: '60%' }}>
                             <Button variant="contained" fullWidth={true} size='large'
-                            onClick={()=>navigate('/login')}
+                                onClick={() => navigate('/login')}
                             >Sign Up</Button>
                         </Box>
                     </FormControl>
+
+                    <div style={{
+                        // display: 'flex',
+                        // flexDirection: 'column',
+                        // justifyContent:'center',
+                        marginTop: '5%'
+                    }}>
+                        {/* <Button variant="contained" onClick={() => navigate('/')} >Sign up</Button> */}
+                        <Button variant="contained" onClick={() => navigate('/login')} style={{ marginRight: '15px' }}>Log in</Button>
+                        <Button variant="contained" onClick={() => navigate('/Dashboard')}>DashBoard</Button>
+
+                    </div>
                 </Grid>
 
             </Grid>
